@@ -54,3 +54,55 @@ body,html{
     background-color: rgba(0, 128, 0, 0.428);
     padding: 1vw;
 }
+
+.panneaux{
+    background-color: blue;
+    height: 100vh;
+    display: flex;
+}
+
+.panneau{
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    flex : 1;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    transition: flex .8s cubic-bezier(.17,.67,.83,.67);  
+
+}
+.montreal{background-image: url("paysage1.jpg");}
+.ocean{background-image: url("paysage2.jpg");}
+.everest{ background-image: url("paysage3.jpg");}
+.picardie{ background-image: url("paysage4.jpg");}
+.espace{ background-image: url("paysage5.jpg");}
+
+
+.panneau>span{
+    color: white;
+    font-size:2em;
+    font-weight: bolder;
+    font-family: 'Ubuntu';
+    opacity: 0%;
+    transition: all 1s;
+
+}
+.haut{
+    transform: translateY(-300%);
+}
+.bas{
+    transform: translateY(300%);
+}
+
+.panneau:hover{
+flex:5
+
+}
+.panneau:hover>span{
+    opacity: 100%;
+    transform: translateY(0);
+}
