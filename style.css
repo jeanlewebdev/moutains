@@ -59,13 +59,21 @@ body,html{
     font-size: 1.5em;
 
 }
+.lienMenu{
+    margin-left: 2vw;
+    margin-right: 2vw;
+    text-decoration: none;
+    font-size: 1.5em;
+
+}
 .header{
     height: 85%;
-    display: flex;
+   display:none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .punchline{
     margin: 2vh;
     font-size: 6.5em;
@@ -95,4 +103,7 @@ body,html{
     justify-content: space-around;
     align-items: center;
     display:none;
+}
+.visible{
+    display: flex;
 }

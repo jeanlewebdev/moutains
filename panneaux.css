@@ -61,7 +61,8 @@ body,html{
 }
 .header{
     height: 85%;
-    display:flex
+    display:flex;
+    display: none;
 
 }
 .panneau{
@@ -76,10 +77,10 @@ body,html{
     transition: flex 1s ease-in-out;
 
 }
-.panneau:hover{
+.ouvert{
     flex:5
 }
-.panneau:hover>.textePanneau{
+.ouvert>.textePanneau{
     opacity: 100%;
 }
 
@@ -131,4 +132,7 @@ body,html{
     justify-content: space-around;
     align-items: center;
     display:none;
+}
+.visible{
+    display: flex;
 }
